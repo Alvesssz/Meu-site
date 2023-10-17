@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+*{
+    margin: 0;  /* Margem */
+    padding: 0;  /* Preenchimento */
+} 
 body{
     height: 100%; /* altura */
     width: 100%; /* largura */
     display: flex;
     justify-content: center;
-    background: ; /*fundo do site*/
+    background: linear-gradient(#64ddff,#9d9d9d); /*fundo do site*/
+    background-repeat: no-repeat;
 }
 .imagem{
     display: flex;
@@ -12,35 +20,8 @@ body{
 .imagem img{
     width: 170px; /*tamanho da foto do logo*/
     border-radius: 200px;
-    margin-top: 30px;
-}
-/* Meu primeiro Comentário */
-/* Reset do CSS para o navegador*/ 
-*{
-    margin: 0;  /* Margem */
-    padding: 0;  /* Preenchimento */
-} 
-
-/* Corpo do Site */ 
-body{
-    height: 100%; /* altura */
-    width: 100%; /* largura */
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(#64ddff,#9d9d9d);
-    background-repeat: no-repeat;
-}   
-/* Logo  */ 
-.imagem{
-    display: flex;
-    justify-content: center;
-}
-.imagem img{
-    width: 170px;
-    border-radius: 200px;
     margin-top: 150px;
 }
-
 /* Titulo */ 
 .nome{
     margin-top: 10px;
@@ -52,21 +33,26 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .redes-sociais{
-    margin-top: 10px;  /* margem superior   */ 
+    margin-top: 10px;  /* margem superior  */ 
+    display: flex;
     justify-content: center;  /*centralizar texto */ 
     align-items: center;
     /* background: red;  cor para da DIV */ 
 }
-.icon, .email{
+.redes-sociais a{
+    text-decoration: none;
+}
+.icone, .email{
+    display: flex;
     height: 35px;
     width: 35px;
     border-radius: 30px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 1);  /* caixa de sombra  */
     margin: 5px;
     overflow: hidden;  /* efeito Mascara */
 }
-.icon i, .email i{
+.icone i, .email i{
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -76,5 +62,4 @@ body{
     border-radius: 30px;
     background-color:azure; 
     color: #308ff4;  /* cor do texto */
-    cursor: pointer;
 }
