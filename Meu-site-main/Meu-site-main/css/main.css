@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+*{
+    margin: 0;  /* Margem */
+    padding: 0;  /* Preenchimento */
+} 
+body{
+    height: 100%; /* altura */
+    width: 100%; /* largura */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#64ddff,#9d9d9d); /*fundo do site*/
+    background-repeat: no-repeat;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 170px; /*tamanho da foto do logo*/
+    border-radius: 200px;
+    margin-top: 150px;
+}
+/* Titulo */ 
+.nome{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4982be; /* cor dos textos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.redes-sociais{
+    margin-top: 10px;  /* margem superior  */ 
+    display: flex;
+    justify-content: center;  /*centralizar texto */ 
+    align-items: center;
+    /* background: red;  cor para da DIV */ 
+}
+.redes-sociais a{
+    text-decoration: none;
+}
+.icone, #email{
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);  /* caixa de sombra  */
+    margin: 5px;
+    overflow: hidden;  /* efeito Mascara */
+}
+.icone i, #email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: #7ba6d4;
+    color: #fff7f7;
+}
+.icone span a {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 25px;
+    color:#308ff4;
+    line-height: 35px;
+    font-size: 15px; /*tamanho da fonte*/
+    margin-left: 15;
+}
+.icone:hover{
+    width: 125px;
+    background: #ffffff;
+}
+.texto{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    height: 250;
+    padding: 35px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: #4982be;
+    overflow: hidden;
+    box-shadow: 0 5px 3px rgba(22, 22, 22, 0.5);
+}
+.sobre-mim{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 35px;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.linguagem img{
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000000;
+    margin: 5px;
+}
+.projetoa {
+    margin-top: 40px;
+    flex-direction: column;
+}
+.item{
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 40px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: rgb(132, 120, 177);
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.item:hover{
+    transition: 0.2s;
+    background: white;
+}
+.video{
+    padding: 15px;
+    margin: auto;
+    display: none;
+}
+.video.active{
+    display: block;
+}
+footer p{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(58, 43, 135);
+    font-family: 'Courier New', Courier, monospace;
+}
+/* FIM DO CSS PARA DESKTOP*/
+
+/* Recurso para rederizar o conteúdo do site e adapte para diversos dispositivos móveis ou resoluções */
+@media (max-width: 700px){ /* Início da resolução para tablet (700px) */
+    .imagem img{
+        width: 140px;
+        margin-top: 25px;
+    }
+    .texto{
+        width: 300px;
+        height: 300px;
+    }
+    .linguagem img{
+        width: 170px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .item{
+        width: 350px;
+    }
+    .video{
+        width: 260px;
+    }
+}/* Fim Resolução 700px */
+
+@media (max-width: 500px){ /* Início da resolução para smartphone (500px) */
+    .imagem img{
+        width: 100px;
+        margin-top: 30px;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .texto{
+        margin-top: 50px;
+        width: 200px;
+        height: 300px;
+        padding: 30px;
+    }
+   .sobre-mim{
+    font-size: 21;
+   }
+    .subtitulo{
+        font-size: 25px;
+    }
+    .item{
+        width: 260px;
+        height: 40px;
+        margin-top: 15px;
+    }
+    .video{
+        width: 250px;
+        height: 160px;
+    }
+} /*Fim Resolução 500px */
